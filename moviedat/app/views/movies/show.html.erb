@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+<div class="panel">
+  <h3>    <%= @movie.title %></h3>
+
+<p>
+
+  <video width="320" height="240" controls>
+    <source src= <%= @movie.url %> type="video/mp4">
+
+      Your browser does not support the video tag.
+    </video>
+  </p>
+
+  <div class="panel callout radius">
+
+
+<p>
+
+
+  <strong>Description:</strong>
+  <%= @movie.description %>
+</p>
+
+<p>
+  <strong>Cast:</strong>
+  <%= @movie.cast %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @movie.genre %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @movie.length %>
+</p>
+
+
+
+<p>
+  <strong>Year:</strong>
+  <%= @movie.year %>
+</p>
+
+
+</div>
+
+</div>
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %>
