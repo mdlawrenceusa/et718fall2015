@@ -1,9 +1,17 @@
 <p id="notice"><%= notice %></p>
-<div class="panel">
-  <h3>    <%= @movie.title %></h3>
+
+<div class="row">
+
+
+
+
+
+
+<img src="https://s3.amazonaws.com/mdlet718/tube.png" alt="myTube Logo">
 
 <p>
 
+  <div class="small-5 columns">
   <video width="320" height="240" controls>
     <source src= <%= @movie.url %> type="video/mp4">
 
@@ -11,12 +19,17 @@
     </video>
   </p>
 
-  <div class="panel callout radius">
+</div>
 
+  <div class="small-7 columns">
+  <div class="panel">
 
 <p>
+  <strong>Title:</strong>
+  <%= @movie.title %>
+</p>
 
-
+<p>
   <strong>Description:</strong>
   <%= @movie.description %>
 </p>
@@ -42,10 +55,11 @@
   <strong>Year:</strong>
   <%= @movie.year %>
 </p>
-
-
+</div>
 </div>
 
-</div>
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
 <%= link_to 'Back', movies_path %>
+
+
+</div>

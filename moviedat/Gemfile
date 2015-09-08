@@ -14,10 +14,10 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
-gem 'foundation-rails', '5.4.3.1'
-
-# Code to active record windows issue
+# Windows ActiveRecord Fix
 gem 'coffee-script-source', '1.8.0'
+
+gem 'foundation-rails', '5.4.3.1'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
